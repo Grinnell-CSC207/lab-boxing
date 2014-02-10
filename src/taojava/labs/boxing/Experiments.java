@@ -102,7 +102,7 @@ public class Experiments
     pen.println("str: " + str);
     pen.println("bigvals: " + bigvals + " or " + Arrays.toString(bigvals));
     pen.println("littlevals: " + littlevals + " or " 
-                + Arrays.toString(bigvals));
+                + Arrays.toString(littlevals));
     pen.println();
 
     // We're done.  Clean up.
