@@ -17,8 +17,7 @@ public class Experiments
   /**
    * Add brackets around a string.
    */
-  public static String
-  bracket(String str)
+  public static String bracket(String str)
   {
     return "[" + str + "]";
   } // bracket
@@ -26,8 +25,7 @@ public class Experiments
   /**
    * Add parentheses around a stringified object.
    */
-  public static String
-  parenthesize(Object o)
+  public static String parenthesize(Object o)
   {
     return "(" + o.toString() + ")";
   } // parenthesize(Object)
@@ -35,18 +33,16 @@ public class Experiments
   /**
    * Square an Integer.
    */
-  public static Integer 
-  square(Integer x)
+  public static Integer square(Integer x)
   {
-    int val = x.intValue(); 
+    int val = x.intValue();
     return new Integer(val * val);
   } // square(Integer)
 
   /**
    * Square an int.
    */
-  public static int
-  sqr(int x)
+  public static int sqr(int x)
   {
     return x * x;
   } // sqr
@@ -54,11 +50,10 @@ public class Experiments
   /**
    * Sum an array of ints.
    */
-  public static int
-  littleSum(int[] values)
+  public static int littleSum(int[] values)
   {
     int sum = 0;
-    for(int i = 0; i < values.length; i++)
+    for (int i = 0; i < values.length; i++)
       {
         sum += values[i];
       } // for
@@ -68,11 +63,10 @@ public class Experiments
   /**
    * Sum an array of Integers.
    */
-  public static Integer
-  bigSum(Integer[] values)
+  public static Integer bigSum(Integer[] values)
   {
     int sum = 0;
-    for(int i = 0; i < values.length; i++)
+    for (int i = 0; i < values.length; i++)
       {
         sum += values[i].intValue();
       } // for
@@ -83,25 +77,23 @@ public class Experiments
   // | Main |
   // +------+
 
-  public static void 
-  main(String[] args)
-      throws Exception
+  public static void main(String[] args)
+    throws Exception
   {
     PrintWriter pen = new PrintWriter(System.out, true);
     Integer bigi = new Integer(5);
     int littlei = 3;
     String str = "Hello";
     int[] littlevals = new int[] { 1, 2, 3 };
-    Integer[] bigvals = new Integer[] { new Integer(4),
-                                        new Integer(5),
-                                        new Integer(6) };
+    Integer[] bigvals =
+        new Integer[] { new Integer(4), new Integer(5), new Integer(6) };
 
     // Print out our original values.
     pen.println("bigi: " + bigi);
     pen.println("littlei: " + littlei);
     pen.println("str: " + str);
     pen.println("bigvals: " + bigvals + " or " + Arrays.toString(bigvals));
-    pen.println("littlevals: " + littlevals + " or " 
+    pen.println("littlevals: " + littlevals + " or "
                 + Arrays.toString(littlevals));
     pen.println();
 
